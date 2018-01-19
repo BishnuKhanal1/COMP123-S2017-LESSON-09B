@@ -14,7 +14,7 @@ namespace COMP123_S2017_LESSON_09B
     /// <summary>
     /// This is the superhuman class
     /// </summary>
-    
+
     public class SuperHuman : Human
     {
         //Private instance variables
@@ -22,6 +22,14 @@ namespace COMP123_S2017_LESSON_09B
 
         //public properties
 
+        public List<Power> Powers
+        {
+            get
+            {
+                return this._powers; //this returns the reference
+            }
+        }
+           
 
         //constructor
 
