@@ -7,7 +7,8 @@ using System.Threading.Tasks;
  * Name: Bishnu Khanal
  * Date: Jan 18, 2017
  * Description: Demo for Lesson 9
- * Version: 0.3- added the power to the super human class object
+ * Version: 0.4- added another power to the super human class object
+ *              - also displayed all the powers
  * */
 namespace COMP123_S2017_LESSON_09B
 {
@@ -16,7 +17,12 @@ namespace COMP123_S2017_LESSON_09B
         static void Main(string[] args)
         {
             SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.AddPower("Spider Climbing", 50);
+            superHuman.AddPower("Spider Climbing ", 50);
+            superHuman.AddPower("Webcasting ", 40);
+
+
+
+            superHuman.DisplayPowers();
         }
     }
 }
